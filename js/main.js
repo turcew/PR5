@@ -7,13 +7,13 @@ document.addEventListener('DOMContentLoaded', () => {
 	const logInForm = document.querySelector('#logInForm');
 	const loginInput = document.querySelector('#login');
 	
-	console.log("hello")
 	if (!modalAuth) {
 		console.warn('Модальне вікно авторизації не знайдено на цій сторінці');
 	}
 
 	const openModalAuth = () => {
 		if (modalAuth) {
+			console.log("hello")
 			modalAuth.classList.add('show');
 			loginInput.style.borderColor = '';
 		}
@@ -88,3 +88,4 @@ document.addEventListener('DOMContentLoaded', () => {
 		});
 	}
 });
+
