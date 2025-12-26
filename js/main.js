@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	const closeModalAuth = () => {
 		if (modalAuth) {
-			modalAuth.classList.remove('show');
+			modalAuth.classList.remove('is-open');
 			logInForm?.reset();
 			loginInput.style.borderColor = '';
 		}
@@ -88,5 +88,6 @@ document.addEventListener('DOMContentLoaded', () => {
 		});
 	}
 });
+
 
 
