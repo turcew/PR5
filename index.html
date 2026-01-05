@@ -8,6 +8,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet" />
 	<link rel="stylesheet" href="css/normalize.css" />
 	<link rel="stylesheet" href="css/style.css" />
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -40,13 +42,36 @@
 	<main class="main">
 		<div class="container">
 			<section class="container-promo">
-				<section class="promo pizza">
-					<h1 class="promo-title">Онлайн-сервіс <br />доставки їжі додому</h1>
-					<p class="promo-text">
-						Страви з улюбленого ресторану привезе кур'єр
-					</p>
-				</section>
+				<div class="swiper promo-swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="img/promo/vegetables.png" alt="Доставка їжі додому" class="promo-image" />
+							<div class="promo-content">
+								<h1 class="promo-title">Онлайн-сервіс <br />доставки їжі додому</h1>
+								<p class="promo-text">
+									Страви з улюбленого ресторану привезе кур'єр
+								</p>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<img src="img/promo/kebab.png" alt="Promo 2" class="promo-image" />
+						</div>
+						<div class="swiper-slide">
+							<img src="img/promo/pizza.png" alt="Promo 3" class="promo-image" />
+						</div>
+						<div class="swiper-slide">
+							<img src="img/promo/sushi.png" alt="Promo 4" class="promo-image" />
+						</div>
+					</div>
+
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+
+					<div class="swiper-pagination"></div>
+				</div>
 			</section>
+
 			<section class="restaurants">
 				<div class="section-heading">
 					<h2 class="section-title">Ресторани</h2>
@@ -105,6 +130,8 @@
 	</div>
 
 	<script src="js/main.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script src="js/swiper-init.js"></script>
 </body>
 
 </html>
